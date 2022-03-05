@@ -1,19 +1,19 @@
 from setuptools import setup
 
 setup(
-    name             = 'chris-plugin-template',
+    name             = 'bigfiles',
     version          = '1.0.0',
-    description      = 'A ChRIS DS plugin template',
+    description      = 'Create files of random data',
     author           = 'FNNDSC',
     author_email     = 'dev@babyMRI.org',
-    url              = 'https://github.com/FNNDSC/python-chrisapp-template',
-    py_modules       = ['app'],
-    install_requires = ['chris_plugin'],
+    url              = 'https://github.com/FNNDSC/dbg-bigfiles',
+    py_modules       = ['bigfiles'],
+    install_requires = ['chris_plugin', 'tqdm'],
     license          = 'MIT',
-    python_requires  = '>=3.8.2',
+    python_requires  = '>=3.10.2',
     entry_points     = {
         'console_scripts': [
-            'commandname = app:main'
+            'bigfiles = bigfiles:main'
             ]
         },
     classifiers      = [

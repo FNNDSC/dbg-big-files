@@ -1,1 +1,2 @@
 chris_plugin~=0.0.12
+tqdm~=4.63.0
